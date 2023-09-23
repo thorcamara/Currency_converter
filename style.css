@@ -96,3 +96,25 @@ body::after {
   justify-content: space-between;
   margin-top: 20px;
 }
+
+.container form .from,
+.container form .to {
+  width: 100%;
+}
+
+.container .convert-box .select-input {
+  display: flex;
+  width: 100%;
+  border: 1px solid #999;
+  height: 40px;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0 20px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container .convert-box .select-input:hover {
+  border: 1px solid #675afe;
+}

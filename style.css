@@ -118,3 +118,20 @@ body::after {
 .container .convert-box .select-input:hover {
   border: 1px solid #675afe;
 }
+
+.container .convert-box .select-input img {
+  max-width: 20px;
+}
+
+.container .convert-box .select-input select {
+  width: 100%;
+  cursor: pointer;
+  font-size: 1rem;
+  background: none;
+  margin: 0 -5px 0 5px;
+  color: #fff;
+}
+
+.container .convert-box .select-input select option {
+  color: #000;
+}

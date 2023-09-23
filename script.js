@@ -17,12 +17,11 @@ const exRateTxt = document.querySelector("form .result");
   });
 });
 
-
 async function getExchangeRate() {
   const amountVal = amount.value || 1;
   exRateTxt.innerText = "Getting exchange rate...";
   try {
-    const response = await fetch(`https://v6.exchangerate-api.com/v6/[YOUR_KEY]]/latest/${fromCur.value}`);
+    const response = await fetch(`https://v6.exchangerate-api.com/v6/9773f18e782d514944be48e9/latest/${fromCur.value}`);
     const result = await response.json();
     const exchangeRate = result.conversion_rates[toCur.value];
     const totalExRate = (amountVal * exchangeRate).toFixed(2);
